@@ -20,9 +20,10 @@ Here are my apps. Feel free to contact me. Here is my github: https://github.com
 """
 st.write(content2)
 
-col3, empty_col, col4 = st.columns(1.5, 0.5, 1.5)
+col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 
 df = pd.read_csv("data.csv", sep=";")
+
 
 with col3:
     for index, row in df[:10].iterrows():
